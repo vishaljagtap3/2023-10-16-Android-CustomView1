@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <CheckBox
+        android:checked="true"
+        android:text="Allow Exit"
+        android:id="@+id/chkExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.bitcodetech.customview1.ExitButton
+        android:id="@+id/btnExit"
+        android:text="Exit Application"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.bitcodetech.customview1.TaskView
+        android:layout_marginTop="16dp"
+        android:id="@+id/taskView"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
